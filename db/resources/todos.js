@@ -1,33 +1,33 @@
 const { getIdentityByEmail } = require('../functions');
 
 module.exports = async () => {
-  const michael = await getIdentityByEmail('michael@email.com');
-  const jim = await getIdentityByEmail('jim@email.com');
+  const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
+  const oana = await getIdentityByEmail('oana@posedaru.com');
 
   return [
     {
-      identity: michael,
+      identity: bogdan,
       name: 'Make a todo list',
       done: true,
     },
     {
-      identity: michael,
-      name: 'Add integration tests',
+      identity: bogdan,
+      name: 'Make a pre-departure checklist',
       done: false,
     },
     {
-      identity: michael,
-      name: 'Complete starter project',
+      identity: oana,
+      name: 'Make sure passports are ready',
       done: false,
     },
     {
-      identity: jim,
-      name: 'Make fun of Dwight',
+      identity: bogdan,
+      name: 'Tell Ketchup to make some sauce',
       done: false,
     },
     {
-      identity: jim,
-      name: 'Go home at 5PM sharp',
+      identity: oana,
+      name: 'Teeeeeell hiiiiiim..',
       done: true,
     },
   ];
