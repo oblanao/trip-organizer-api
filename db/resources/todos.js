@@ -2,7 +2,7 @@ const { getIdentityByEmail } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
-  const oana = await getIdentityByEmail('oana@posedaru.com');
+  const oana = await getIdentityByEmail('oana@posedaru.ro');
 
   return [
     {
