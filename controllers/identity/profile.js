@@ -3,8 +3,8 @@ const { Identity } = require('../../models');
 
 module.exports = async (req, res) => {
   const { me } = req.user;
-  if (me) {
-    throw error(404, 'Missing required params');
+  if (!me) {
+    throw error(404, 'first Missing required params');
   }
 
   const profile = await Identity.findById(me).lean();
