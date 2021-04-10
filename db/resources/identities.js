@@ -1,31 +1,23 @@
 const { hashSync } = require('bcryptjs');
 
 module.exports = async () => {
-  const shhhh = hashSync('supersecretpassword');
+  const shhhh = hashSync('supersecret');
   return [
     {
-      email: 'michael@email.com',
-      name: 'Michael Scott',
+      email: 'bogdan@posedaru.ro',
+      name: 'Bogdan Posedaru',
       role: 'admin',
       password: shhhh,
       active: true,
       confirmed: true,
     },
     {
-      email: 'jim@email.com',
-      name: 'Jim Halpert',
+      email: 'oana@posedaru.ro',
+      name: 'Oana Posedaru',
       role: 'client',
       password: shhhh,
       active: false,
       confirmed: true,
-    },
-    {
-      email: 'pam@email.com',
-      name: 'Pam Beesly',
-      role: 'client',
-      password: shhhh,
-      active: true,
-      confirmed: false,
     },
   ];
 };
