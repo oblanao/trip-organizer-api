@@ -8,6 +8,10 @@ const schema = new Schema({
     ref: 'identity',
     required: true,
   },
+  name: {
+    type: String,
+    required: true,
+  },
   carrier: {
     type: String,
     required: true,
