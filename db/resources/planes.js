@@ -6,6 +6,7 @@ module.exports = async () => {
   return [
     {
       identity: bogdan,
+      name: 'OTP-SJO Roundtrip',
       carrier: 'Lufthansa',
       plane_segments: [],
       included_luggage: {
