@@ -1,5 +1,5 @@
 const { Schema, Types, model } = require('mongoose');
-const { paginate, validate } = require('./plugins');
+const { validate } = require('./plugins');
 const { timestamps } = require('./schemas');
 
 const schema = new Schema({
@@ -78,7 +78,6 @@ const schema = new Schema({
   ...timestamps,
 });
 
-schema.plugin(paginate);
 schema.plugin(validate);
 
 const name = 'trip';
