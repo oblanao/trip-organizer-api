@@ -7,6 +7,7 @@
     "dev": "nodemon ./bin/www",
     "start": "node ./bin/www",
     "seed": "node ./db/seed",
+    "db-clean": "node ./db/clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
