@@ -1,9 +1,10 @@
-const { getIdentityByEmail, getCountryByName } = require('../functions');
+const { getIdentityByEmail, getCountryByName, getPlaneByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
   const oana = await getIdentityByEmail('oana@posedaru.ro');
   const costaRica = await getCountryByName('Costa Rica');
+  const roundtripFlight = await getPlaneByName('OTP-SJO Roundtrip');
 
   return [
     {
@@ -15,7 +16,7 @@ module.exports = async () => {
       start_date: 1619669415000,
       end_date: 1620751815000,
       members: [bogdan, oana],
-      planes: [],
+      planes: [roundtripFlight],
       car: null,
       transfers: [],
       day_plans: [],
