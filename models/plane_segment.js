@@ -27,6 +27,10 @@ const schema = new Schema({
     type: Date,
     required: true
   },
+  /* If positive number, means origin is later than destination. i.e.: RO vs UK, value is 2 */
+  timezone_origin_vs_destination: {
+    type: Number,
+  },
   ...timestamps,
 });
 
