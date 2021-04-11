@@ -24,7 +24,7 @@ const schema = new Schema({
     required: true
   },
   land_airport: {
-    type: Date,
+    type: String,
     required: true
   },
   /* If positive number, means origin is later than destination. i.e.: RO vs UK, value is 2 */
