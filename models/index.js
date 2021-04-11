@@ -5,6 +5,7 @@ const Identity = require('./identity');
 const Key = require('./key');
 const Reset = require('./reset');
 const Todo = require('./todo');
+const Trip = require('./trip');
 
 module.exports = {
   Admin,
@@ -14,4 +15,5 @@ module.exports = {
   Key,
   Reset,
   Todo,
+  Trip,
 };
