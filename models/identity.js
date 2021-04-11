@@ -35,6 +35,18 @@ const schema = new mongoose.Schema({
   confirmedAt: {
     type: Date,
   },
+  photo: {
+    type: String,
+  },
+  bio: {
+    type: String,
+  },
+  color: {
+    type: String
+  },
+  position: {
+    type: String
+  },
   ...timestamps,
 });
 
