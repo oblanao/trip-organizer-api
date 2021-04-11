@@ -5,6 +5,7 @@ const Hash = require('./hash');
 const Identity = require('./identity');
 const Key = require('./key');
 const Plane = require('./plane');
+const PlaneSegment = require('./plane_segment');
 const Reset = require('./reset');
 const Todo = require('./todo');
 const Trip = require('./trip');
@@ -17,6 +18,7 @@ module.exports = {
   Identity,
   Key,
   Plane,
+  PlaneSegment,
   Reset,
   Todo,
   Trip,
