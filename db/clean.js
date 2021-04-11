@@ -1,12 +1,13 @@
 const connectToMongo = require('../functions/connect');
 
-const { Identity, Todo, Country, Trip } = require("../models");
+const { Identity, Todo, Plane, Country, Trip } = require("../models");
 
 const clean = async () => {
   await connectToMongo();
 
   await Identity.deleteMany({})
   await Todo.deleteMany({})
+  await Plane.deleteMany({})
   await Country.deleteMany({})
   await Trip.deleteMany({})
 };
