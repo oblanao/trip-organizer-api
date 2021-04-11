@@ -7,7 +7,7 @@ module.exports = async (req, res) => {
     throw error(404, 'Missing required params');
   }
 
-  const trips = await Trip.find().paginate(req.query);
+  const trips = await Trip.find({}).paginate(req.query);
   if (!trips) {
     throw error(404, 'Resource not found');
   }
