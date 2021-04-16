@@ -1,11 +1,11 @@
-const { getIdentityByEmail, getPlaneSegmentByName, getCountryByName, getTripByName } = require('../functions');
+const { getIdentityByEmail, getTripByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
-  const outboundFirstLeg = await getPlaneSegmentByName('Outbound Flight - First leg');
-  const outboundSecondLeg = await getPlaneSegmentByName('Outbound Flight - Second leg');
-  const inboundFirstLeg = await getPlaneSegmentByName('Inbound Flight - First leg');
-  const inboundSecondLeg = await getPlaneSegmentByName('Inbound Flight - Second leg');
+  // const outboundFirstLeg = await getPlaneSegmentByName('Outbound Flight - First leg');
+  // const outboundSecondLeg = await getPlaneSegmentByName('Outbound Flight - Second leg');
+  // const inboundFirstLeg = await getPlaneSegmentByName('Inbound Flight - First leg');
+  // const inboundSecondLeg = await getPlaneSegmentByName('Inbound Flight - Second leg');
 
   return [
     {
@@ -13,7 +13,6 @@ module.exports = async () => {
       trip: getTripByName('Easter in Costa Rica'),
       name: 'OTP-SJO Roundtrip',
       carrier: 'Lufthansa',
-      plane_segments: [outboundFirstLeg, outboundSecondLeg, inboundFirstLeg, inboundSecondLeg],
       included_luggage: {
         /* per trip, for all members */
         num_hand_luggage: 5,

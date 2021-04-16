@@ -1,4 +1,4 @@
-const { getIdentityByEmail } = require('../functions');
+const { getIdentityByEmail, getPlaneByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
@@ -6,6 +6,7 @@ module.exports = async () => {
   return [
     {
       identity: bogdan,
+      plane: getPlaneByName('OTP-SJO Roundtrip'),
       name: 'Outbound Flight - First leg',
       takeoff_time: 1619680200000,
       takeoff_airport: 'OTP',
@@ -15,6 +16,7 @@ module.exports = async () => {
     },
     {
       identity: bogdan,
+      plane: getPlaneByName('OTP-SJO Roundtrip'),
       name: 'Outbound Flight - Second leg',
       takeoff_time: 1619703600000,
       takeoff_airport: 'FRA',
@@ -24,6 +26,7 @@ module.exports = async () => {
     },
     {
       identity: bogdan,
+      plane: getPlaneByName('OTP-SJO Roundtrip'),
       name: 'Inbound Flight - First leg',
       takeoff_time: 1620761700000,
       takeoff_airport: 'SJO',
@@ -33,6 +36,7 @@ module.exports = async () => {
     },
     {
       identity: bogdan,
+      plane: getPlaneByName('OTP-SJO Roundtrip'),
       name: 'Inbound Flight - Second leg',
       takeoff_time: 1620853200000,
       takeoff_airport: 'FRA',
