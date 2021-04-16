@@ -2,6 +2,7 @@ const { getIdentityByEmail, getTripByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
+  const trip = await getTripByName('Easter in Costa Rica');
   // const outboundFirstLeg = await getPlaneSegmentByName('Outbound Flight - First leg');
   // const outboundSecondLeg = await getPlaneSegmentByName('Outbound Flight - Second leg');
   // const inboundFirstLeg = await getPlaneSegmentByName('Inbound Flight - First leg');
@@ -10,7 +11,7 @@ module.exports = async () => {
   return [
     {
       identity: bogdan,
-      trip: getTripByName('Easter in Costa Rica'),
+      trip,
       name: 'OTP-SJO Roundtrip',
       carrier: 'Lufthansa',
       included_luggage: {

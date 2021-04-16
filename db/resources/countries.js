@@ -2,11 +2,12 @@ const { getIdentityByEmail, getTripByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
+  const trip = await getTripByName('Easter in Costa Rica');
 
   return [
     {
       identity: bogdan,
-      trip: getTripByName('Easter in Costa Rica'),
+      trip,
       name: 'Costa Rica',
       description:
         'A very friendly, developed but eco-aware country, Costa Rica is well known for its lush rainforests, for its bio-diverisity, for its sunny beaches and of course, the renowned Costa Rican Coffee.',

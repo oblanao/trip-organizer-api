@@ -2,11 +2,12 @@ const { getIdentityByEmail, getTripByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
+  const trip = await getTripByName('Easter in Costa Rica');
 
   return [
     {
       identity: bogdan,
-      trip: getTripByName,
+      trip,
       type: 'Natural',
       name: 'Arenal Volcano',
       description: 'Amazing and picturesque volcano in the middle of the jungle. Erupted last time in 2005 but its lava kept flowing till 2010.',
