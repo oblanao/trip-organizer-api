@@ -5,6 +5,7 @@
 
 const Accommodation = require('./accommodation');
 const Admin = require('./admin');
+const Attraction = require('./attraction');
 const Car = require('./car');
 const Confirm = require('./confirm');
 const Country = require('./country');
@@ -21,6 +22,7 @@ const Trip = require('./trip');
 module.exports = {
   Accommodation,
   Admin,
+  Attraction,
   Car,
   Confirm,
   Country,
