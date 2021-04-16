@@ -1,3 +1,8 @@
+/**
+ * TODO: all cars, countries, planes, planeSegments, ToDos, Transfers, Trips
+ * should be linked with trip
+*/
+
 const Admin = require('./admin');
 const Car = require('./car');
 const Confirm = require('./confirm');
