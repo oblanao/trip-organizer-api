@@ -1,3 +1,5 @@
+/* TODO: model for location to use for start and end locations */
+
 const { Schema, Types, model } = require('mongoose');
 const { validate } = require('./plugins');
 const { timestamps } = require('./schemas');
@@ -19,6 +21,14 @@ const schema = new Schema({
   },
   total_km: {
     type: Number,
+    required: true
+  },
+  start_name: {
+    type: String,
+    required: true
+  },
+  end_name: {
+    type: String,
     required: true
   },
   start_gps_coords: {
