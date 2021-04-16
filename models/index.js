@@ -9,6 +9,7 @@ const Plane = require('./plane');
 const PlaneSegment = require('./plane_segment');
 const Reset = require('./reset');
 const Todo = require('./todo');
+const Transfer = require('./transfer');
 const Trip = require('./trip');
 
 module.exports = {
@@ -23,5 +24,6 @@ module.exports = {
   PlaneSegment,
   Reset,
   Todo,
+  Transfer,
   Trip,
 };
