@@ -3,6 +3,7 @@
  * should be linked with trip
 */
 
+const Accommodation = require('./accommodation');
 const Admin = require('./admin');
 const Car = require('./car');
 const Confirm = require('./confirm');
@@ -18,6 +19,7 @@ const Transfer = require('./transfer');
 const Trip = require('./trip');
 
 module.exports = {
+  Accommodation,
   Admin,
   Car,
   Confirm,
