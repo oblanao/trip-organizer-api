@@ -21,12 +21,6 @@ const schema = new Schema({
     type: String,
     required: true,
   },
-  plane_segments: [
-    {
-      type: Types.ObjectId,
-      ref: 'plane_segment',
-    },
-  ],
   included_luggage: {
     num_hand_luggage: {
       type: Number,

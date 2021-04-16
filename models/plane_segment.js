@@ -8,6 +8,11 @@ const schema = new Schema({
     ref: 'identity',
     required: true,
   },
+  plane: {
+    type: Types.ObjectId,
+    ref: 'plane',
+    required: true
+  },
   name: {
     type: String,
   },
