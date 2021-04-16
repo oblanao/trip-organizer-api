@@ -14,16 +14,16 @@ const attractions = require('./seeds/010_attractions');
 const seed = async () => {
   await connectToMongo();
 
-  // await identities.seed();
-  // await trips.seed();
+  await identities.seed();
+  await trips.seed();
   await countries.seed();
-  // await planeSegments.seed();
-  // await planes.seed();
-  // await cars.seed();
-  // await transfers.seed();
-  // await accommodations.seed();
-  // await attractions.seed();
-  // await todos.seed();
+  await planeSegments.seed();
+  await planes.seed();
+  await cars.seed();
+  await transfers.seed();
+  await accommodations.seed();
+  await attractions.seed();
+  await todos.seed();
 };
 
 (async () => {
