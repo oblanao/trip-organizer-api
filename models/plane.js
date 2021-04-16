@@ -8,6 +8,11 @@ const schema = new Schema({
     ref: 'identity',
     required: true,
   },
+  trip: {
+    type: Types.ObjectId,
+    ref: 'trip',
+    required: true
+  },
   name: {
     type: String,
     required: true,

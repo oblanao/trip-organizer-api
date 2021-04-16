@@ -12,6 +12,11 @@ const schema = new Schema({
     type: String,
     required: true
   },
+  trip: {
+    type: Types.ObjectId,
+    ref: 'trip',
+    required: true
+  },
   name: {
     type: String,
     required: true

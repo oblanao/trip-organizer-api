@@ -10,6 +10,11 @@ const schema = new Schema({
     ref: 'identity',
     required: true,
   },
+  trip: {
+    type: Types.ObjectId,
+    ref: 'trip',
+    required: true
+  },
   self_drive: {
     type: Boolean,
     required: true
