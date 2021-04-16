@@ -8,6 +8,10 @@ const schema = new Schema({
     ref: 'identity',
     required: true,
   },
+  type: {
+    type: String,
+    required: true
+  },
   name: {
     type: String,
     required: true
@@ -29,10 +33,6 @@ const schema = new Schema({
     // out of 5
     type: Number,
     default: 2.5
-  },
-  type: {
-    type: String,
-    required: true
   },
   photos: {
     type: Array

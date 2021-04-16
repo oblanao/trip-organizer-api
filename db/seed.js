@@ -9,6 +9,7 @@ const trips = require('./seeds/004_trips');
 const cars = require('./seeds/007_cars');
 const transfers = require('./seeds/008_transfers');
 const accommodations = require('./seeds/009_accommodations');
+const attractions = require('./seeds/010_attractions');
 
 const seed = async () => {
   await connectToMongo();
@@ -22,6 +23,7 @@ const seed = async () => {
   await cars.seed();
   await transfers.seed();
   await accommodations.seed();
+  await attractions.seed();
 };
 
 (async () => {
