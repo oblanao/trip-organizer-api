@@ -32,10 +32,14 @@ const schema = new Schema({
     type: Number
   },
   review_score: {
-    type: Number
+    type: Object
   },
   review_excerpts: {
     type: Array,
+  },
+  total_nights: {
+    type: Number,
+    required: true
   },
   price: {
     type: Number,

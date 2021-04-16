@@ -1,3 +1,4 @@
+const accommodations = require('./accommodations');
 const cars = require('./cars');
 const countries = require('./countries');
 const identities = require('./identities');
@@ -8,6 +9,7 @@ const trips = require('./trips');
 const transfers = require('./transfers');
 
 module.exports = {
+  accommodations,
   cars,
   countries,
   identities,
