@@ -2,13 +2,11 @@
 ** sthey should hold trip_id, not the other way around
 */
 
-const { getIdentityByEmail, getCountryByName, getPlaneByName } = require('../functions');
+const { getIdentityByEmail } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
   const oana = await getIdentityByEmail('oana@posedaru.ro');
-  const costaRica = await getCountryByName('Costa Rica');
-  const roundtripFlight = await getPlaneByName('OTP-SJO Roundtrip');
 
   return [
     {
@@ -16,16 +14,9 @@ module.exports = async () => {
       name: 'Easter in Costa Rica',
       tagline: 'Pura Vida',
       description: 'This time we\'l goo the furthest. We\'ll live in the jungle for 2 weeks. Cheers to that!',
-      countries: [costaRica],
       start_date: 1619669415000,
       end_date: 1620751815000,
       members: [bogdan, oana],
-      planes: [roundtripFlight],
-      car: null,
-      transfers: [],
-      day_plans: [],
-      accommodations: [],
-      files: []
     },
   ];
 };
