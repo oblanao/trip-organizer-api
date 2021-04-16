@@ -17,8 +17,8 @@ const seed = async () => {
   await identities.seed();
   await trips.seed();
   await countries.seed();
-  await planeSegments.seed();
   await planes.seed();
+  await planeSegments.seed();
   await cars.seed();
   await transfers.seed();
   await accommodations.seed();
