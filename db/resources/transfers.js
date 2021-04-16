@@ -1,4 +1,4 @@
-const { getIdentityByEmail } = require('../functions');
+const { getIdentityByEmail, getTripByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
@@ -6,6 +6,7 @@ module.exports = async () => {
   return [
     {
       identity: bogdan,
+      trip: getTripByName('Easter in Costa Rica'),
       self_drive: true,
       duration: 180,
       total_km: 4.2,

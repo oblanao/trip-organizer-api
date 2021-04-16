@@ -1,4 +1,4 @@
-const { getIdentityByEmail } = require('../functions');
+const { getIdentityByEmail, getTripByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
@@ -6,6 +6,7 @@ module.exports = async () => {
   return [
     {
       identity: bogdan,
+      trip: getTripByName('Easter in Costa Rica'),
       name: 'Hyundai Tucson Nebun',
       url: 'https://wild-rider.com/4x4-budget-car-rental/hyundai-tucson',
       brand: 'Hyundai',

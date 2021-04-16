@@ -1,3 +1,7 @@
+/* TODO: for all actors, should be the opposite way:
+** sthey should hold trip_id, not the other way around
+*/
+
 const { getIdentityByEmail, getCountryByName, getPlaneByName } = require('../functions');
 
 module.exports = async () => {

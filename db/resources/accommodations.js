@@ -1,4 +1,4 @@
-const { getIdentityByEmail } = require('../functions');
+const { getIdentityByEmail, getTripByName } = require('../functions');
 
 module.exports = async () => {
   const bogdan = await getIdentityByEmail('bogdan@posedaru.ro');
@@ -6,6 +6,7 @@ module.exports = async () => {
   return [
     {
       identity: bogdan,
+      trip: getTripByName('Easter in Costa Rica'),
       type: 'AirBNB',
       name: 'La Fortuna House',
       url : 'https://www.airbnb.com.ro/rooms/43802637',
