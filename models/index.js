@@ -1,4 +1,5 @@
 const Admin = require('./admin');
+const Car = require('./car');
 const Confirm = require('./confirm');
 const Country = require('./country');
 const Hash = require('./hash');
@@ -12,6 +13,7 @@ const Trip = require('./trip');
 
 module.exports = {
   Admin,
+  Car,
   Confirm,
   Country,
   Hash,

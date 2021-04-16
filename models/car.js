@@ -11,6 +11,9 @@ const schema = new Schema({
   name: {
     type: String,
   },
+  url: {
+    type: String,
+  },
   brand: {
     type: String,
     required: true,

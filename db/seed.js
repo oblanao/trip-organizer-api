@@ -6,6 +6,7 @@ const planeSegments = require('./seeds/006_plane_segments');
 const planes = require('./seeds/005_planes');
 const countries = require('./seeds/003_countries');
 const trips = require('./seeds/004_trips');
+const cars = require('./seeds/007_cars');
 
 const seed = async () => {
   await connectToMongo();
@@ -16,6 +17,7 @@ const seed = async () => {
   await planes.seed();
   await countries.seed();
   await trips.seed();
+  await cars.seed();
 };
 
 (async () => {
