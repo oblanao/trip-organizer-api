@@ -1,5 +1,3 @@
-/* TODO: Add controllers for all models */
-
 const Accommodation = require('./accommodation');
 const Attraction = require('./attraction');
 const Car = require('./car');

@@ -1,5 +1,3 @@
-/* TODO: add routes for all models */
-
 const accommodation = require('./accommodation');
 const attraction = require('./attraction');
 const car = require('./car');
