@@ -42,10 +42,13 @@ const schema = new mongoose.Schema({
     type: String,
   },
   color: {
-    type: String
+    type: String,
   },
   position: {
-    type: String
+    type: String,
+  },
+  role: {
+    type: String,
   },
   ...timestamps,
 });
